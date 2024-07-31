@@ -6,6 +6,34 @@ using namespace std;
 class Solution {
 public:
     void rabin_karp_algorithm_for_pattern_searching(string pat, string txt) {
+        // int m = pat.length();
+        // int n = txt.length();
+        // int hashc=0, hasht=0;
+        // int h = 1;
+        // for (int i=0; i<m; i++)
+        //     hasht += pat[i];
+
+        // for (int i=0; i<m-1; i++)
+        //     hashc += txt[i];
+
+        // vector<int> res;
+        
+        // for (int i=0, j=m-1; j<n; j++, i++){
+        //     hashc=hashc+txt[j];
+        //     if(hasht==hashc){
+        //         h=1;
+        //         for (int k=i, l=0; k<m ;k++,l++){
+        //             if(pat[l]!=txt[k]) h=0;
+        //         }
+        //         if(h==1)    res.push_back(i);
+        //     }
+        //     hashc=hashc-txt[i];
+        // }
+        
+        // for (int i=0; i<res.size(); i++){
+        //     cout << res[i] << " ";
+        // }
+        
         vector<int> res;
         int M = txt.length();
         int N = pat.length();
