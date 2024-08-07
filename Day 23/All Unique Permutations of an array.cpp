@@ -22,6 +22,25 @@ class Solution {
         for(auto x: s){
             ans.push_back(x);
         }
+
+//Brute Approach
+// int i=n-2;
+//         while(arr[i]<arr[i+1]){
+//             if (i==-1){
+//                 i=n-2;
+//             }
+//             else{
+//                 int temp=arr[i];
+//                 arr[i]=arr[i+1];
+//                 arr[i+1]=temp;
+//                 s.insert(arr);
+//                 i--;
+//             }
+//         }
+        
+//         for(auto x: s){
+//             ans.push_back(x);
+//         }
         return ans;
     }
 };
